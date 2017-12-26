@@ -1,6 +1,6 @@
 FROM continuumio/anaconda3
 
-RUN conda install -y opencv
+RUN conda install -c conda-forge tensorflow
 RUN conda install -c conda-forge keras
 
 ENV NB_USER student
