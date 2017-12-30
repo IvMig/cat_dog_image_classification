@@ -1,5 +1,6 @@
 FROM continuumio/anaconda3
 
+RUN apt install htop
 RUN conda install -c conda-forge tensorflow
 RUN conda install -c conda-forge keras
 RUN conda install -y opencv
