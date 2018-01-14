@@ -1,12 +1,12 @@
 FROM continuumio/anaconda3
 
 RUN apt-get update && apt-get install --assume-yes apt-utils
+RUN conda install -c anaconda fabric
 RUN apt install htop
 RUN conda install -c conda-forge tensorflow
 RUN conda install -c conda-forge keras
 RUN conda install -y opencv
 RUN conda install -c conda-forge tqdm
-RUN conda install -c anaconda fabric
 
 
 ENV NB_USER student
