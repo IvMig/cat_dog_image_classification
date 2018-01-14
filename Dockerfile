@@ -6,6 +6,7 @@ RUN conda install -c conda-forge tensorflow
 RUN conda install -c conda-forge keras
 RUN conda install -y opencv
 RUN conda install -c conda-forge tqdm
+RUN conda install -c anaconda fabric
 
 
 ENV NB_USER student
