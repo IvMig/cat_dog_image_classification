@@ -7,6 +7,7 @@ RUN conda install -c conda-forge keras
 RUN conda install -y opencv
 RUN conda install -c conda-forge tqdm
 
+
 ENV NB_USER student
 ENV NB_UID 1000
 ENV HOME /home/${NB_USER}
