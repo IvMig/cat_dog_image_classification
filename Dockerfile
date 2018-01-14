@@ -1,7 +1,7 @@
 FROM continuumio/anaconda3
 
 RUN apt-get update && apt-get install --assume-yes apt-utils
-RUN conda install -c anaconda fabric
+RUN conda install -c anaconda fabric3
 RUN apt install htop
 RUN conda install -c conda-forge tensorflow
 RUN conda install -c conda-forge keras
